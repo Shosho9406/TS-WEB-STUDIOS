@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | TS Web Studio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="brand">
+            <div class="brand-mark">
+                <img src="images/ts-logo.svg" alt="TS Web Studio logo" class="site-logo">
+            </div>
+            <div>
+                <h1>TS Web Studio</h1>
+                <p>Modern websites for growing brands</p>
+            </div>
+        </div>
+
+        <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+
+        <nav class="nav-links">
+            <a href="INDEX.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero with-visual">
+            <div class="page-hero-text">
+                <p class="tag">Let's Talk</p>
+                <h2>Get in Touch About Your Website Project</h2>
+                <p>
+                    If you need a modern landing page, business website, or portfolio site, we’d love to hear what you have in mind.
+                </p>
+            </div>
+            <img src="images/contact-photo.jpg" alt="Support professional working on a laptop" class="page-visual">
+        </section>
+
+        <section class="content-section">
+            <div class="contact-grid">
+                <div class="contact-box">
+                    <h3>Contact Details</h3>
+                    <p><strong>WhatsApp:</strong> <a href="https://wa.me/27784078575?text=Hi%20TS%20Web%20Studio%2C%20I%20would%20like%20a%20website." target="_blank" rel="noreferrer">0784078575</a></p>
+                    <p><strong>Email:</strong> <a href="mailto:hello@tswebstudio.com">hello@tswebstudio.com</a></p>
+                    <p><strong>Location:</strong> Available for online projects and local collaborations</p>
+                    <div class="contact-meta">
+                        <span>Mon - Sun</span>
+                        <span>07:00 - 22:00</span>
+                    </div>
+                    <div class="quick-contact-grid">
+                        <a href="https://wa.me/27784078575?text=Hi%20TS%20Web%20Studio%2C%20I%20would%20like%20a%20website." class="quick-contact" target="_blank" rel="noreferrer">WhatsApp Us</a>
+                        <a href="mailto:hello@tswebstudio.com" class="quick-contact">Send Email</a>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm" novalidate>
+                    <h4>Send a Message</h4>
+
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+                    <label for="service">Website Type</label>
+                    <select id="service" name="service">
+                        <option value="Landing Page">Landing Page</option>
+                        <option value="Business Website">Business Website</option>
+                        <option value="Portfolio Website">Portfolio Website</option>
+                        <option value="Online Store">Online Store</option>
+                    </select>
+
+                    <label for="message">Project Details</label>
+                    <textarea id="message" name="message" placeholder="Tell us what kind of website you need" required></textarea>
+
+                    <button type="submit" class="btn primary">Send Message</button>
+                    <p class="form-status" id="formStatus" aria-live="polite">Fill in the form and your message will be validated instantly.</p>
+                </form>
+            </div>
+        </section>
+
+        <section class="content-section alt-section">
+            <div class="section-heading">
+                <p class="tag">FAQ</p>
+                <h3>Common Questions</h3>
+            </div>
+
+            <div class="card-grid">
+                <article class="card">
+                    <h4>How long does a website take?</h4>
+                    <p>Simple projects can be completed quickly, while larger sites take more planning and content.</p>
+                </article>
+
+                <article class="card">
+                    <h4>Can you redesign an old site?</h4>
+                    <p>Yes. We can refresh outdated pages and give them a cleaner, more modern presentation.</p>
+                </article>
+
+                <article class="card">
+                    <h4>Do you design for mobile?</h4>
+                    <p>Absolutely. Every layout is built to stay readable and attractive on smaller screens too.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div>
+                <h3>TS Web Studio</h3>
+                <p>Modern, conversion-focused websites for businesses, creatives, and brands that want to stand out online.</p>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <div class="footer-links">
+                    <a href="INDEX.html">Home</a>
+                    <a href="services.html">Services</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+            <div>
+                <h4>Contact</h4>
+                <p><a href="mailto:hello@tswebstudio.com">hello@tswebstudio.com</a></p>
+                <p><a href="https://wa.me/27784078575?text=Hi%20TS%20Web%20Studio%2C%20I%20would%20like%20a%20website." target="_blank" rel="noreferrer">0784078575</a></p>
+            </div>
+        </div>
+        <p class="footer-bottom">&copy; <span class="footer-year">2026</span> TS Web Studio. All rights reserved.</p>
+    </footer>
+    <a href="https://wa.me/27784078575?text=Hi%20TS%20Web%20Studio%2C%20I%20would%20like%20a%20website." class="floating-cta" target="_blank" rel="noreferrer">WhatsApp</a>
+</body>
+</html>

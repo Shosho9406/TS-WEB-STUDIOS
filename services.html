@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | TS Web Studio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="brand">
+            <div class="brand-mark">
+                <img src="images/ts-logo.svg" alt="TS Web Studio logo" class="site-logo">
+            </div>
+            <div>
+                <h1>TS Web Studio</h1>
+                <p>Modern websites for growing brands</p>
+            </div>
+        </div>
+
+        <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+
+        <nav class="nav-links">
+            <a href="INDEX.html">Home</a>
+            <a href="services.html" class="active">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero with-visual">
+            <div class="page-hero-text">
+                <p class="tag">Tailored Solutions</p>
+                <h2>Website Services Designed to Help Your Brand Stand Out</h2>
+                <p>
+                    We create polished, mobile-friendly websites for startups, small businesses,
+                    and creatives who want a professional online presence that builds trust.
+                </p>
+                <div class="hero-actions">
+                    <a href="contact.html" class="btn primary">Request a Quote</a>
+                    <a href="portfolio.html" class="btn secondary">See Sample Work</a>
+                </div>
+            </div>
+            <img src="images/services-photo.jpg" alt="Creative team collaborating on laptops" class="page-visual">
+        </section>
+
+        <section class="content-section">
+            <div class="section-heading">
+                <p class="tag">Packages</p>
+                <h3>Our Core Services</h3>
+            </div>
+
+            <div class="card-grid">
+                <article class="card">
+                    <h4>Starter Landing Page</h4>
+                    <p class="price-line">From R1,800 • Fast turnaround</p>
+                    <p>A single-page design perfect for launches, campaigns, and personal brands.</p>
+                    <ul class="feature-list">
+                        <li>Clean hero section and call to action</li>
+                        <li>Mobile-friendly layout</li>
+                        <li>Fast-loading structure</li>
+                    </ul>
+                </article>
+
+                <article class="card">
+                    <h4>Business Website</h4>
+                    <p class="price-line">From R3,500 • Multi-page setup</p>
+                    <p>A multi-page website that gives your company a strong and credible digital home.</p>
+                    <ul class="feature-list">
+                        <li>Home, services, portfolio, and contact pages</li>
+                        <li>Consistent branding and page structure</li>
+                        <li>Designed for clarity and trust</li>
+                    </ul>
+                </article>
+
+                <article class="card">
+                    <h4>Portfolio Website</h4>
+                    <p class="price-line">From R2,500 • Creator-focused</p>
+                    <p>A stylish showcase built to present your work, skills, and achievements professionally.</p>
+                    <ul class="feature-list">
+                        <li>Project highlights and galleries</li>
+                        <li>About and experience sections</li>
+                        <li>Strong contact prompts</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="content-section alt-section">
+            <div class="section-heading">
+                <p class="tag">Process</p>
+                <h3>How We Work</h3>
+            </div>
+
+            <div class="split-layout">
+                <article class="info-panel">
+                    <h4>Step 1: Discover</h4>
+                    <p>We learn about your business, goals, and the kind of audience you want to attract.</p>
+                </article>
+
+                <article class="info-panel">
+                    <h4>Step 2: Design</h4>
+                    <p>We shape the layout, colour direction, and page structure around your brand identity.</p>
+                </article>
+
+                <article class="info-panel">
+                    <h4>Step 3: Build</h4>
+                    <p>We develop responsive pages that work smoothly across phones, tablets, and desktops.</p>
+                </article>
+
+                <article class="info-panel">
+                    <h4>Step 4: Launch</h4>
+                    <p>Once everything is polished, your site is ready to be shared with the world.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="section-heading">
+                <p class="tag">Quick Estimate</p>
+                <h3>Instant Website Quote Calculator</h3>
+            </div>
+
+            <div class="interactive-box">
+                <form class="quote-form" id="quoteForm">
+                    <div class="inline-fields">
+                        <div>
+                            <label for="serviceType">Website Type</label>
+                            <select id="serviceType" name="serviceType">
+                                <option value="landing">Landing Page</option>
+                                <option value="business">Business Website</option>
+                                <option value="portfolio">Portfolio Website</option>
+                                <option value="ecommerce">Online Store</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="pageCount">Estimated Pages</label>
+                            <input type="number" id="pageCount" name="pageCount" min="1" max="12" value="3">
+                        </div>
+                    </div>
+
+                    <label class="checkbox-row"><input type="checkbox" id="branding" name="branding"> Include branding support</label>
+                    <label class="checkbox-row"><input type="checkbox" id="seo" name="seo"> Include SEO setup</label>
+                    <label class="checkbox-row"><input type="checkbox" id="maintenance" name="maintenance"> Add monthly maintenance</label>
+
+                    <button type="submit" class="btn primary">Calculate Estimate</button>
+                </form>
+
+                <div class="quote-result" id="quoteResult">Select your options to see an instant estimate.</div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="showcase-box">
+                <p>Need a website that feels professional from the first click?</p>
+                <span>Let’s build a clean, modern site that fits your brand and your goals.</span>
+                <div class="hero-actions">
+                    <a href="contact.html" class="btn primary">Start Your Project</a>
+                    <a href="INDEX.html" class="btn secondary">Back Home</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div>
+                <h3>TS Web Studio</h3>
+                <p>Modern, conversion-focused websites for businesses, creatives, and brands that want to stand out online.</p>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <div class="footer-links">
+                    <a href="INDEX.html">Home</a>
+                    <a href="services.html">Services</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+            <div>
+                <h4>Contact</h4>
+                <p><a href="mailto:hello@tswebstudio.com">hello@tswebstudio.com</a></p>
+                <p><a href="https://wa.me/27784078575?text=Hi%20TS%20Web%20Studio%2C%20I%20would%20like%20a%20website." target="_blank" rel="noreferrer">0784078575</a></p>
+            </div>
+        </div>
+        <p class="footer-bottom">&copy; <span class="footer-year">2026</span> TS Web Studio. All rights reserved.</p>
+    </footer>
+    <a href="https://wa.me/27784078575?text=Hi%20TS%20Web%20Studio%2C%20I%20would%20like%20a%20website." class="floating-cta" target="_blank" rel="noreferrer">WhatsApp</a>
+</body>
+</html>

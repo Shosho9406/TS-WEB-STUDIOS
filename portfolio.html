@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | TS Web Studio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="brand">
+            <div class="brand-mark">
+                <img src="images/ts-logo.svg" alt="TS Web Studio logo" class="site-logo">
+            </div>
+            <div>
+                <h1>TS Web Studio</h1>
+                <p>Modern websites for growing brands</p>
+            </div>
+        </div>
+
+        <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+
+        <nav class="nav-links">
+            <a href="INDEX.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="portfolio.html" class="active">Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero with-visual">
+            <div class="page-hero-text">
+                <p class="tag">Selected Work</p>
+                <h2>Examples of the Clean, Professional Style We Create</h2>
+                <p>
+                    Every project is designed to feel modern, easy to navigate, and ready to make a strong first impression.
+                </p>
+                <div class="hero-actions">
+                    <a href="contact.html" class="btn primary">Build Something Similar</a>
+                    <a href="services.html" class="btn secondary">View Services</a>
+                </div>
+            </div>
+            <img src="images/portfolio-photo.jpg" alt="Creative desk setup showing portfolio workspace" class="page-visual">
+        </section>
+
+        <section class="content-section">
+            <div class="section-heading">
+                <p class="tag">Case Studies</p>
+                <h3>Featured Project Concepts</h3>
+            </div>
+
+            <div class="filter-bar">
+                <button class="filter-btn active" type="button" data-filter="all">All</button>
+                <button class="filter-btn" type="button" data-filter="brand">Brand Launch</button>
+                <button class="filter-btn" type="button" data-filter="business">Business</button>
+                <button class="filter-btn" type="button" data-filter="portfolio">Portfolio</button>
+            </div>
+
+            <div id="projectCards" class="showcase-grid" aria-live="polite"></div>
+        </section>
+
+        <section class="content-section alt-section">
+            <div class="section-heading">
+                <p class="tag">Client Experience</p>
+                <h3>What This Style Delivers</h3>
+            </div>
+
+            <div class="testimonial-grid">
+                <article class="testimonial">
+                    <h4>Professional First Impression</h4>
+                    <p>Layouts are built to look credible, clean, and ready for real customers.</p>
+                </article>
+
+                <article class="testimonial">
+                    <h4>Easy Navigation</h4>
+                    <p>Visitors can quickly understand your offer and move toward the next step.</p>
+                </article>
+
+                <article class="testimonial">
+                    <h4>Mobile-Friendly Design</h4>
+                    <p>Your website keeps its quality and readability across different screen sizes.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="section-heading">
+                <p class="tag">Visual Gallery</p>
+                <h3>More Studio Inspiration</h3>
+            </div>
+
+            <div class="photo-gallery">
+                <img src="images/gallery-1.jpg" alt="Minimal office desk and screen" class="gallery-thumb">
+                <img src="images/gallery-2.jpg" alt="Creative workspace with laptop and tools" class="gallery-thumb">
+                <img src="images/gallery-3.jpg" alt="Clean home office setup" class="gallery-thumb">
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="showcase-box">
+                <p>Ready for your own polished website?</p>
+                <span>Let’s turn your idea into a clean, modern online presence.</span>
+                <div class="hero-actions">
+                    <a href="contact.html" class="btn primary">Contact Us</a>
+                    <a href="INDEX.html" class="btn secondary">Back Home</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div>
+                <h3>TS Web Studio</h3>
+                <p>Modern, conversion-focused websites for businesses, creatives, and brands that want to stand out online.</p>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <div class="footer-links">
+                    <a href="INDEX.html">Home</a>
+                    <a href="services.html">Services</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+            <div>
+                <h4>Contact</h4>
+                <p><a href="mailto:hello@tswebstudio.com">hello@tswebstudio.com</a></p>
+                <p><a href="https://wa.me/27784078575?text=Hi%20TS%20Web%20Studio%2C%20I%20would%20like%20a%20website." target="_blank" rel="noreferrer">0784078575</a></p>
+            </div>
+        </div>
+        <p class="footer-bottom">&copy; <span class="footer-year">2026</span> TS Web Studio. All rights reserved.</p>
+    </footer>
+    <a href="https://wa.me/27784078575?text=Hi%20TS%20Web%20Studio%2C%20I%20would%20like%20a%20website." class="floating-cta" target="_blank" rel="noreferrer">WhatsApp</a>
+
+    <!-- Portfolio Modal -->
+    <div id="portfolioModal" class="modal" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
+        <div class="modal-content">
+            <button class="modal-close" type="button" aria-label="Close modal">&times;</button>
+            <div class="modal-body">
+                <h3 id="modalTitle"></h3>
+                <p class="modal-description"></p>
+                <ul class="modal-features"></ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

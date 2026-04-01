@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TS Web Studio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="brand">
+            <div class="brand-mark">
+                <img src="images/ts-logo.svg" alt="TS Web Studio logo" class="site-logo">
+            </div>
+            <div>
+                <h1>TS Web Studio</h1>
+                <p>Modern websites for growing brands</p>
+            </div>
+        </div>
+
+        <button id="themeToggle" class="btn secondary" type="button" aria-label="Toggle theme">Dark Mode</button>
+        <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+
+        <nav class="nav-links">
+            <a href="INDEX.html" class="active">Home</a>
+            <a href="services.html">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <div id="toast" class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-text">
+                <p class="tag">Creative • Clean • Professional</p>
+                <h2>Modern Websites That Turn First-Time Visitors Into Real Clients</h2>
+                <p>
+                    TS Web Studio creates polished, mobile-first websites for brands that want
+                    to look trustworthy, feel premium, and convert more visitors into enquiries.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="contact.html" class="btn primary">Start Your Project</a>
+                    <a href="portfolio.html" class="btn secondary">See Our Work</a>
+                </div>
+
+                <div class="hero-proof">
+                    <span>⚡ Fast turnaround</span>
+                    <span>📱 Mobile-first design</span>
+                    <span>🎯 Conversion-focused layouts</span>
+                </div>
+            </div>
+
+            <div class="hero-panel">
+                <img src="images/home-photo.jpg" alt="Modern web design workspace with screens" class="feature-image">
+                <div class="mini-card">
+                    <strong>Fast</strong>
+                    <span>Responsive designs for all devices</span>
+                </div>
+                <div class="mini-card">
+                    <strong>Modern</strong>
+                    <span>Clean layouts with a professional finish</span>
+                </div>
+                <div class="mini-card">
+                    <strong>Effective</strong>
+                    <span>Built to attract attention and convert visitors</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section banner-section">
+            <div class="banner-card">
+                <img src="images/banner-photo.jpg" alt="Wide web studio workspace banner" class="banner-image">
+                <div class="banner-copy">
+                    <p class="tag">Featured Banner</p>
+                    <h3>Designs That Look Premium on Every Screen</h3>
+                    <p>We combine modern visuals, clear messaging, and polished layouts to help brands stand out online.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="stat-strip premium-stats">
+                <div class="stat-item">
+                    <strong class="count-up" data-target="48" data-suffix=" hrs">0</strong>
+                    <span>Average first concept turnaround</span>
+                </div>
+                <div class="stat-item">
+                    <strong class="count-up" data-target="100" data-suffix="%">0</strong>
+                    <span>Responsive, mobile-ready layouts</span>
+                </div>
+                <div class="stat-item">
+                    <strong class="count-up" data-target="3" data-suffix="+">0</strong>
+                    <span>Live sample site concepts ready to explore</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section" id="services">
+            <div class="section-heading">
+                <p class="tag">What We Offer</p>
+                <h3>Our Services</h3>
+            </div>
+
+            <div class="card-grid">
+                <article class="card">
+                    <h4>Landing Pages</h4>
+                    <p>High-impact pages designed to showcase your offer clearly and beautifully.</p>
+                </article>
+                <article class="card">
+                    <h4>Business Websites</h4>
+                    <p>Professional multi-section websites that build trust and support your brand.</p>
+                </article>
+                <article class="card">
+                    <h4>Portfolio Websites</h4>
+                    <p>Stylish portfolio layouts that help you present your work with confidence.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="content-section alt-section">
+            <div class="section-heading">
+                <p class="tag">Why Choose Us</p>
+                <h3>Built for Results, Not Just Looks</h3>
+            </div>
+
+            <div class="card-grid">
+                <article class="card feature-card">
+                    <h4>Clear Brand Messaging</h4>
+                    <p>We organise your content so visitors quickly understand who you are, what you offer, and why they should trust you.</p>
+                </article>
+                <article class="card feature-card">
+                    <h4>Premium Visual Style</h4>
+                    <p>Modern layouts, strong spacing, bold imagery, and refined colours create a polished online presence.</p>
+                </article>
+                <article class="card feature-card">
+                    <h4>Conversion-Focused CTAs</h4>
+                    <p>Every section is designed to gently guide visitors toward getting in touch, booking, or requesting a quote.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="content-section alt-section" id="portfolio">
+            <div class="section-heading">
+                <p class="tag">Featured Area</p>
+                <h3>Our Work</h3>
+            </div>
+
+            <div class="showcase-box">
+                <p>Fresh, polished web experiences built for modern brands.</p>
+                <span>Explore sample project ideas and see the style we can bring to your business.</span>
+                <div class="hero-actions">
+                    <a href="portfolio.html" class="btn primary">View Portfolio</a>
+                    <a href="contact.html" class="btn secondary">Request a Quote</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section" id="contact">
+            <div class="section-heading">
+                <p class="tag">Let's Connect</p>
+                <h3>Contact Us</h3>
+            </div>
+
+            <div class="contact-box">
+                <p><strong>WhatsApp:</strong> <a href="https://wa.me/27784078575?text=Hi%20TS%20Web%20Studio%2C%20I%20want%20a%20website." target="_blank" rel="noreferrer">0784078575</a></p>
+                <p><strong>Email:</strong> <a href="mailto:hello@tswebstudio.com">hello@tswebstudio.com</a></p>
+                <p><strong>Reply time:</strong> Usually within a few hours</p>
+                <div class="hero-actions">
+                    <a href="contact.html" class="btn primary">Contact Page</a>
+                    <a href="https://wa.me/27784078575?text=Hi%20TS%20Web%20Studio%2C%20I%20want%20a%20website." class="btn secondary" target="_blank" rel="noreferrer">Chat on WhatsApp</a>
+                </div>
+            </div>
+        </section>
+        <section class="content-section">
+            <div class="section-heading">
+                <p class="tag">FAQ</p>
+                <h3>Questions Clients Usually Ask</h3>
+            </div>
+
+            <div class="faq-list">
+                <article class="faq-item">
+                    <button class="faq-question" type="button">How soon can my website be ready?<span>+</span></button>
+                    <div class="faq-answer">
+                        <p>Simple landing pages can move quickly, while larger websites take longer depending on content, pages, and revisions.</p>
+                    </div>
+                </article>
+
+                <article class="faq-item">
+                    <button class="faq-question" type="button">Can you redesign an old website?<span>+</span></button>
+                    <div class="faq-answer">
+                        <p>Yes. We can refresh outdated layouts and turn them into something cleaner, faster, and more modern.</p>
+                    </div>
+                </article>
+
+                <article class="faq-item">
+                    <button class="faq-question" type="button">Will my site work well on phones?<span>+</span></button>
+                    <div class="faq-answer">
+                        <p>Absolutely. Every page is designed to remain clear, readable, and attractive across mobile, tablet, and desktop screens.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div>
+                <h3>TS Web Studio</h3>
+                <p>Modern, conversion-focused websites for businesses, creatives, and brands that want to stand out online.</p>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <div class="footer-links">
+                    <a href="INDEX.html">Home</a>
+                    <a href="services.html">Services</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+            <div>
+                <h4>Contact</h4>
+                <p><a href="mailto:hello@tswebstudio.com">hello@tswebstudio.com</a></p>
+                <p><a href="https://wa.me/27784078575?text=Hi%20TS%20Web%20Studio%2C%20I%20would%20like%20a%20website." target="_blank" rel="noreferrer">0784078575</a></p>
+            </div>
+        </div>
+        <p class="footer-bottom">&copy; <span class="footer-year">2026</span> TS Web Studio. All rights reserved.</p>
+    </footer>
+    <a href="https://wa.me/27784078575?text=Hi%20TS%20Web%20Studio%2C%20I%20would%20like%20a%20website." class="floating-cta" target="_blank" rel="noreferrer">WhatsApp</a>
+</body>
+</html>
