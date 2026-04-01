@@ -264,7 +264,13 @@ function setupThemeToggle() {
         localStorage.setItem('tsTheme', mode);
     };
 
-    const saved = localStorage.getItem('tsTheme') || 'light';
+    // Get saved preference, or detect from device settings
+    let saved = localStorage.getItem('tsTheme');
+    if (!saved) {
+        // Auto-detect based on device preference
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        saved = prefersDark ? 'dark' : 'light';
+    }
     setMode(saved);
 
     toggle.addEventListener('click', () => {
