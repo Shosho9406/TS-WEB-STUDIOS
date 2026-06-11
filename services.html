@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com https://images.unsplash.com; script-src 'self'; style-src 'self' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self'; frame-src 'none'; object-src 'none'; base-uri 'self'">
+  <meta name="referrer" content="no-referrer-when-downgrade">
+  <title>Services | TS Web Studio</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <div class="header-inner">
+      <a href="index.html" class="brand">
+        <div class="brand-mark">
+          <img src="images/ts-logo.svg" alt="TS Web Studio" class="site-logo">
+        </div>
+        <div>
+          <div class="brand-name">TS Web Studio</div>
+          <div class="brand-sub">Modern websites for growing brands</div>
+        </div>
+      </a>
+      <button id="themeToggle" type="button" aria-label="Toggle theme">☀ Light</button>
+      <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="services.html" class="active">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html" class="nav-cta">Get Started →</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<div id="toast" class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+
+<main>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero-inner">
+        <div>
+          <span class="eyebrow">Tailored Solutions</span>
+          <h2>Website Services Designed to Help Your Brand Stand Out</h2>
+          <p class="lead">We create polished, mobile-friendly websites for startups, small businesses, and creatives who want a professional online presence that builds trust and drives enquiries.</p>
+          <div class="hero-actions">
+            <a href="contact.html" class="btn btn-primary">Request a Quote →</a>
+            <a href="portfolio.html" class="btn btn-outline">See Sample Work</a>
+          </div>
+        </div>
+        <img
+          src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&auto=format&fit=crop&q=80"
+          alt="Creative team collaborating on web project"
+          class="page-visual">
+      </div>
+    </div>
+  </section>
+
+  <!-- PACKAGES -->
+  <section class="services-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Packages</span>
+        <h3 class="heading-lg">Our Core Services</h3>
+        <p class="body-lg" style="max-width:540px">Choose the package that fits your goals — all include mobile-first design, clean layouts, and a fast handover.</p>
+      </div>
+      <div class="services-grid">
+        <article class="service-card reveal-in">
+          <div class="service-icon">🚀</div>
+          <h4>Starter Landing Page</h4>
+          <span class="price-tag">From R1,800 · Fast turnaround</span>
+          <p style="margin-top:0.75rem">A single-page design perfect for launches, campaigns, and personal brands that need to make an immediate impression.</p>
+          <ul class="feature-list" style="margin-top:1rem">
+            <li>Clean hero section and call to action</li>
+            <li>Mobile-friendly, fast-loading layout</li>
+            <li>Contact form or WhatsApp link</li>
+          </ul>
+        </article>
+
+        <article class="service-card reveal-in">
+          <div class="service-icon">🏢</div>
+          <h4>Business Website</h4>
+          <span class="price-tag">From R3,500 · Multi-page setup</span>
+          <p style="margin-top:0.75rem">A full multi-page website that gives your company a strong, credible digital home visitors immediately trust.</p>
+          <ul class="feature-list" style="margin-top:1rem">
+            <li>Home, services, portfolio & contact pages</li>
+            <li>Consistent branding throughout</li>
+            <li>Designed for clarity and conversion</li>
+          </ul>
+        </article>
+
+        <article class="service-card reveal-in">
+          <div class="service-icon">🎨</div>
+          <h4>Portfolio Website</h4>
+          <span class="price-tag">From R2,500 · Creator-focused</span>
+          <p style="margin-top:0.75rem">A stylish showcase built to present your work, skills, and achievements with confidence and style.</p>
+          <ul class="feature-list" style="margin-top:1rem">
+            <li>Project highlights and image galleries</li>
+            <li>About and experience sections</li>
+            <li>Strong contact prompts throughout</li>
+          </ul>
+        </article>
+
+        <article class="service-card reveal-in">
+          <div class="service-icon">💳</div>
+          <h4>Digital Business Cards</h4>
+          <span class="price-tag">From R980 · Shareable contact page</span>
+          <p style="margin-top:0.75rem">Custom branded digital cards that work on phones, email, and instant sharing — no printing required.</p>
+          <ul class="feature-list" style="margin-top:1rem">
+            <li>Clickable contact links and QR-ready design</li>
+            <li>Branded mobile-first experience</li>
+            <li>Optional website combo bundle available</li>
+          </ul>
+        </article>
+
+        <article class="service-card reveal-in">
+          <div class="service-icon">🛒</div>
+          <h4>Online Store</h4>
+          <span class="price-tag">From R5,200 · E-commerce ready</span>
+          <p style="margin-top:0.75rem">A clean, conversion-focused online store setup for brands ready to sell products or services directly to customers.</p>
+          <ul class="feature-list" style="margin-top:1rem">
+            <li>Product pages and cart setup</li>
+            <li>Payment integration guidance</li>
+            <li>Mobile shopping experience</li>
+          </ul>
+        </article>
+
+        <article class="service-card reveal-in">
+          <div class="service-icon">📈</div>
+          <h4>SEO & Maintenance</h4>
+          <span class="price-tag">From R350/month</span>
+          <p style="margin-top:0.75rem">Keep your site ranked, fast, and up to date. Monthly packages for all site types — peace of mind included.</p>
+          <ul class="feature-list" style="margin-top:1rem">
+            <li>Technical SEO optimisation</li>
+            <li>Regular content and security updates</li>
+            <li>Performance monitoring</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section>
+    <div class="container">
+      <div class="section-header centered">
+        <span class="eyebrow">Process</span>
+        <h3 class="heading-lg">How We Work</h3>
+        <p class="body-lg" style="max-width:480px">A simple, transparent process — so you always know what's happening and what comes next.</p>
+      </div>
+      <div class="process-grid">
+        <div class="process-step reveal-in">
+          <div class="step-num">01</div>
+          <h4>Discover</h4>
+          <p>We learn about your business, goals, and the kind of audience you want to attract online.</p>
+        </div>
+        <div class="process-step reveal-in">
+          <div class="step-num">02</div>
+          <h4>Design</h4>
+          <p>We shape the layout, colour direction, and page structure around your brand identity and goals.</p>
+        </div>
+        <div class="process-step reveal-in">
+          <div class="step-num">03</div>
+          <h4>Build</h4>
+          <p>We develop responsive pages that work smoothly across phones, tablets, and desktops.</p>
+        </div>
+        <div class="process-step reveal-in">
+          <div class="step-num">04</div>
+          <h4>Launch</h4>
+          <p>Once everything is polished and approved, your site goes live and is ready to bring in clients.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUOTE CALCULATOR -->
+  <section>
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Quick Estimate</span>
+        <h3 class="heading-lg">Instant Website Quote Calculator</h3>
+        <p class="body-lg">Get a ballpark figure before we talk — no commitment needed.</p>
+      </div>
+      <div class="calc-wrapper reveal-in">
+        <form class="quote-form" id="quoteForm">
+          <div class="inline-fields">
+            <div>
+              <label for="serviceType">Service Type</label>
+              <select id="serviceType" name="serviceType">
+                <option value="landing">Landing Page</option>
+                <option value="business">Business Website</option>
+                <option value="portfolio">Portfolio Website</option>
+                <option value="ecommerce">Online Store</option>
+                <option value="digital-card">Digital Business Card</option>
+              </select>
+            </div>
+            <div>
+              <label for="pageCount">Estimated Pages</label>
+              <input type="number" id="pageCount" name="pageCount" min="1" max="12" value="3">
+            </div>
+          </div>
+
+          <div class="combo-block" id="comboDetails" hidden>
+            <label class="checkbox-row"><input type="checkbox" id="comboDeal" name="comboDeal"> Add website combo deal with your digital business card</label>
+            <div class="combo-settings">
+              <label for="comboWebsiteType">Website bundle</label>
+              <select id="comboWebsiteType" name="comboWebsiteType">
+                <option value="landing">Landing Page bundle</option>
+                <option value="business">Business Website bundle</option>
+                <option value="portfolio">Portfolio Website bundle</option>
+              </select>
+              <p class="note">Combo pricing includes your digital card plus a website at a bundle discount.</p>
+            </div>
+          </div>
+
+          <label class="checkbox-row"><input type="checkbox" id="branding" name="branding"> Include branding support (+R450)</label>
+          <label class="checkbox-row"><input type="checkbox" id="seo" name="seo"> Include SEO setup (+R600)</label>
+          <label class="checkbox-row"><input type="checkbox" id="maintenance" name="maintenance"> Add monthly maintenance (+R350/mo)</label>
+
+          <button type="submit" class="btn btn-primary" style="margin-top:0.5rem">Calculate Estimate</button>
+        </form>
+        <div class="quote-result" id="quoteResult">
+          <span style="font-size:0.85rem;color:var(--ink-60)">Select your options above to see an instant estimate.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BAND -->
+  <section>
+    <div class="container">
+      <div class="cta-band reveal-in">
+        <h3>Need a Website That Feels Professional from the First Click?</h3>
+        <p>Let's build a clean, modern site that fits your brand and converts visitors into clients.</p>
+        <div class="btn-group">
+          <a href="contact.html" class="btn btn-white">Start Your Project →</a>
+          <a href="index.html" class="btn btn-ghost">Back to Home</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>TS Web Studio</h3>
+        <p>Modern, conversion-focused websites for businesses, creatives, and brands that want to stand out online.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <div class="footer-links">
+          <a href="mailto:tswebstudios@gmail.com">tswebstudios@gmail.com</a>
+          <a href="https://wa.me/27784078575" target="_blank" rel="noopener noreferrer">0784 078 575</a>
+        </div>
+      </div>
+    </div>
+    <p class="footer-bottom">&copy; <span class="footer-year">2026</span> TS Web Studio. All rights reserved.</p>
+  </div>
+</footer>
+
+<a href="https://wa.me/27784078575?text=Hi%20TS%20Web%20Studio%2C%20I%20would%20like%20a%20website." class="floating-cta" target="_blank" rel="noopener noreferrer">💬 WhatsApp Us</a>
+
+</body>
+</html>

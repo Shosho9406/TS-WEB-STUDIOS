@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com https://images.unsplash.com; script-src 'self'; style-src 'self' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self'; frame-src 'none'; object-src 'none'; base-uri 'self'">
+  <meta name="referrer" content="no-referrer-when-downgrade">
+  <title>TS Web Studio — Modern Websites That Convert</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+<!-- ─── HEADER ─── -->
+<header class="site-header">
+  <div class="container">
+    <div class="header-inner">
+      <a href="index.html" class="brand">
+        <div class="brand-mark">
+          <img src="images/ts-logo.svg" alt="TS Web Studio" class="site-logo">
+        </div>
+        <div>
+          <div class="brand-name">TS Web Studio</div>
+          <div class="brand-sub">Modern websites for growing brands</div>
+        </div>
+      </a>
+      <button id="themeToggle" type="button" aria-label="Toggle theme">☀ Light</button>
+      <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <nav class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html" class="nav-cta">Get Started →</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<div id="toast" class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+
+<main>
+
+  <!-- ─── HERO ─── -->
+  <section class="hero-section" id="home">
+    <div class="container">
+      <div class="hero-layout">
+        <div class="hero-text">
+          <div class="hero-badge"><span class="dot"></span> Accepting new projects</div>
+          <h2 class="hero-title">
+            Websites That Turn<br>
+            Visitors Into <span class="grad">Real Clients</span>
+          </h2>
+          <p class="hero-lead">
+            TS Web Studio builds polished, mobile-first websites for brands that want to look premium, feel trustworthy, and convert more visitors into paying customers.
+          </p>
+          <div class="hero-actions">
+            <a href="contact.html" class="btn btn-primary">Start Your Project →</a>
+            <a href="portfolio.html" class="btn btn-outline">See Our Work</a>
+          </div>
+          <div class="hero-proof">
+            <span class="proof-chip">⚡ 48hr first concept</span>
+            <span class="proof-chip">📱 Mobile-first design</span>
+            <span class="proof-chip">🎯 Conversion-focused</span>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=900&auto=format&fit=crop&q=80"
+              alt="Modern web design workspace"
+              loading="eager">
+          </div>
+          <div class="hero-floating-card hfc-1">
+            <div class="hfc-label">Avg. Turnaround</div>
+            <div class="hfc-value">48 hrs</div>
+            <div class="hfc-sub">First concept delivered</div>
+          </div>
+          <div class="hero-floating-card hfc-2">
+            <div class="hfc-label">Design Quality</div>
+            <div class="hfc-value">100%</div>
+            <div class="hfc-sub">Mobile-ready layouts</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── MARQUEE ─── -->
+  <div class="marquee-section">
+    <div class="marquee-label">Trusted by businesses across South Africa</div>
+    <div class="marquee-track">
+      <span class="marquee-item">Landing Pages</span>
+      <span class="marquee-item">•</span>
+      <span class="marquee-item">Business Websites</span>
+      <span class="marquee-item">•</span>
+      <span class="marquee-item">Portfolio Sites</span>
+      <span class="marquee-item">•</span>
+      <span class="marquee-item">Digital Business Cards</span>
+      <span class="marquee-item">•</span>
+      <span class="marquee-item">Online Stores</span>
+      <span class="marquee-item">•</span>
+      <span class="marquee-item">Brand Identity</span>
+      <span class="marquee-item">•</span>
+      <span class="marquee-item">SEO Setup</span>
+      <span class="marquee-item">•</span>
+      <span class="marquee-item">Landing Pages</span>
+      <span class="marquee-item">•</span>
+      <span class="marquee-item">Business Websites</span>
+      <span class="marquee-item">•</span>
+      <span class="marquee-item">Portfolio Sites</span>
+      <span class="marquee-item">•</span>
+      <span class="marquee-item">Digital Business Cards</span>
+      <span class="marquee-item">•</span>
+      <span class="marquee-item">Online Stores</span>
+      <span class="marquee-item">•</span>
+      <span class="marquee-item">Brand Identity</span>
+      <span class="marquee-item">•</span>
+      <span class="marquee-item">SEO Setup</span>
+      <span class="marquee-item">•</span>
+    </div>
+  </div>
+
+  <!-- ─── SERVICES ─── -->
+  <section class="services-section" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">What We Offer</span>
+        <h3 class="heading-lg">Everything Your Brand Needs Online</h3>
+        <p class="body-lg" style="max-width:580px">From a single landing page to a full multi-page website — we build it clean, fast, and ready to impress.</p>
+      </div>
+      <div class="services-grid">
+        <article class="service-card reveal-in">
+          <div class="service-icon">🚀</div>
+          <h4>Landing Pages</h4>
+          <p>High-impact single pages designed to showcase your offer and turn curious visitors into real enquiries.</p>
+          <span class="price-tag">From R1,800</span>
+        </article>
+        <article class="service-card reveal-in">
+          <div class="service-icon">🏢</div>
+          <h4>Business Websites</h4>
+          <p>Multi-page websites that give your company a credible, professional digital home that builds trust fast.</p>
+          <span class="price-tag">From R3,500</span>
+        </article>
+        <article class="service-card reveal-in">
+          <div class="service-icon">🎨</div>
+          <h4>Portfolio Websites</h4>
+          <p>Stylish showcase sites that present your work with confidence — built for creatives, freelancers & agencies.</p>
+          <span class="price-tag">From R2,500</span>
+        </article>
+        <article class="service-card reveal-in">
+          <div class="service-icon">💳</div>
+          <h4>Digital Business Cards</h4>
+          <p>Branded, mobile-first digital cards with clickable links, QR-ready design, and optional website bundles.</p>
+          <span class="price-tag">From R980</span>
+        </article>
+        <article class="service-card reveal-in">
+          <div class="service-icon">🛒</div>
+          <h4>Online Stores</h4>
+          <p>Clean, conversion-focused e-commerce setups for brands ready to sell products or services online.</p>
+          <span class="price-tag">From R5,200</span>
+        </article>
+        <article class="service-card reveal-in">
+          <div class="service-icon">📈</div>
+          <h4>SEO & Maintenance</h4>
+          <p>Keep your site ranked, fast, and up to date. Monthly maintenance packages available for all sites.</p>
+          <span class="price-tag">From R350/mo</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FEATURE BLEED ─── -->
+  <section class="feature-section">
+    <div class="container">
+      <div class="feature-bleed reveal-in">
+        <img
+          src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1400&auto=format&fit=crop&q=80"
+          alt="Professional team working on website design">
+        <div class="feature-copy">
+          <span class="eyebrow">Our Standard</span>
+          <h3>Designs That Look Premium on Every Screen</h3>
+          <p>We combine modern visuals, clear messaging, and polished layouts to help your brand make a strong first impression — on phones, tablets, and desktops.</p>
+          <a href="portfolio.html" class="btn btn-white">View Our Portfolio →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── STATS ─── -->
+  <section>
+    <div class="container">
+      <div class="stats-strip">
+        <div class="stat-block">
+          <strong class="count-up" data-target="48" data-suffix=" hrs">0</strong>
+          <span>Average first concept turnaround</span>
+        </div>
+        <div class="stat-block">
+          <strong class="count-up" data-target="100" data-suffix="%">0</strong>
+          <span>Responsive, mobile-ready layouts</span>
+        </div>
+        <div class="stat-block">
+          <strong class="count-up" data-target="3" data-suffix="+">0</strong>
+          <span>Live sample concepts to explore</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── WHY US ─── -->
+  <section id="about">
+    <div class="container">
+      <div class="why-layout">
+        <div class="why-img reveal-in">
+          <img
+            src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&auto=format&fit=crop&q=80"
+            alt="Web designer working on a project">
+        </div>
+        <div>
+          <span class="eyebrow">Why Choose Us</span>
+          <h3 class="heading-lg" style="margin-bottom:1.75rem">Built for Results,<br>Not Just Looks</h3>
+          <div class="why-points">
+            <div class="why-point reveal-in">
+              <div class="why-num">1</div>
+              <div>
+                <h5>Clear Brand Messaging</h5>
+                <p>We organise your content so visitors instantly understand who you are, what you offer, and why they should trust you.</p>
+              </div>
+            </div>
+            <div class="why-point reveal-in">
+              <div class="why-num">2</div>
+              <div>
+                <h5>Premium Visual Style</h5>
+                <p>Modern layouts, strong spacing, bold imagery, and refined colour — creating a polished presence that stands out.</p>
+              </div>
+            </div>
+            <div class="why-point reveal-in">
+              <div class="why-num">3</div>
+              <div>
+                <h5>Conversion-Focused CTAs</h5>
+                <p>Every section is designed to guide visitors toward getting in touch, booking a call, or requesting a quote.</p>
+              </div>
+            </div>
+            <div class="why-point reveal-in">
+              <div class="why-num">4</div>
+              <div>
+                <h5>Fast & Affordable</h5>
+                <p>World-class quality without agency price tags — built for South African entrepreneurs and growing brands.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PORTFOLIO PREVIEW ─── -->
+  <section class="showcase-section" id="portfolio">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Featured Work</span>
+        <h3 class="heading-lg">Our Work</h3>
+        <p class="body-lg" style="max-width:520px">Fresh, polished web experiences built for modern brands across South Africa.</p>
+      </div>
+      <div class="showcase-grid">
+        <article class="project-card reveal-in">
+          <img class="project-card-img" src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=600&auto=format&fit=crop&q=80" alt="Glow Beauty Studio website">
+          <div class="project-card-body">
+            <span class="project-tag">Brand Launch</span>
+            <h4>Glow Beauty Studio</h4>
+            <p>A soft, modern website for a beauty brand focused on trust, elegance, and online bookings.</p>
+          </div>
+        </article>
+        <article class="project-card reveal-in">
+          <img class="project-card-img" src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&auto=format&fit=crop&q=80" alt="NextPath Consulting website">
+          <div class="project-card-body">
+            <span class="project-tag">Corporate Site</span>
+            <h4>NextPath Consulting</h4>
+            <p>A structured multi-page business website built to communicate professionalism and expertise.</p>
+          </div>
+        </article>
+        <article class="project-card reveal-in">
+          <img class="project-card-img" src="https://images.unsplash.com/photo-1452457807411-4979b707c5be?w=600&auto=format&fit=crop&q=80" alt="Mpho Visuals portfolio">
+          <div class="project-card-body">
+            <span class="project-tag">Creative Portfolio</span>
+            <h4>Mpho Visuals</h4>
+            <p>A portfolio concept that puts the work first while keeping the overall experience stylish and simple.</p>
+          </div>
+        </article>
+      </div>
+      <div style="text-align:center;margin-top:2rem">
+        <a href="portfolio.html" class="btn btn-outline">View All Projects →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── TESTIMONIALS ─── -->
+  <section class="testimonials-section">
+    <div class="container">
+      <div class="section-header centered">
+        <span class="eyebrow">Client Experience</span>
+        <h3 class="heading-lg">What Our Style Delivers</h3>
+      </div>
+      <div class="testimonial-grid">
+        <article class="testimonial reveal-in">
+          <p class="testimonial-quote">The site looked professional from day one. Clients mention it every time they reach out — it's given my brand so much credibility.</p>
+          <div class="testimonial-author">
+            <img class="t-avatar" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&auto=format&fit=crop&q=80" alt="Lerato M.">
+            <div>
+              <div class="t-name">Lerato M.</div>
+              <div class="t-role">Beauty Salon Owner, JHB</div>
+            </div>
+          </div>
+        </article>
+        <article class="testimonial reveal-in">
+          <p class="testimonial-quote">Fast turnaround, clean design, and they understood exactly what I needed. Worth every rand. My enquiries doubled within a month.</p>
+          <div class="testimonial-author">
+            <img class="t-avatar" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&auto=format&fit=crop&q=80" alt="Thabo K.">
+            <div>
+              <div class="t-name">Thabo K.</div>
+              <div class="t-role">Consulting Firm, PTA</div>
+            </div>
+          </div>
+        </article>
+        <article class="testimonial reveal-in">
+          <p class="testimonial-quote">My portfolio finally looks the way my work feels. The mobile design is flawless and I love how easy it is to share the link.</p>
+          <div class="testimonial-author">
+            <img class="t-avatar" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&auto=format&fit=crop&q=80" alt="Ayanda D.">
+            <div>
+              <div class="t-name">Ayanda D.</div>
+              <div class="t-role">Freelance Photographer, CPT</div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FAQ ─── -->
+  <section>
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">FAQ</span>
+        <h3 class="heading-lg">Questions Clients Usually Ask</h3>
+      </div>
+      <div class="faq-list">
+        <article class="faq-item">
+          <button class="faq-question" type="button">How soon can my website be ready?<span>+</span></button>
+          <div class="faq-answer"><p>Simple landing pages can move very quickly — often within a few days. Larger multi-page sites depend on content, pages, and revision rounds. We'll give you a clear timeline before we start.</p></div>
+        </article>
+        <article class="faq-item">
+          <button class="faq-question" type="button">Can you redesign an old website?<span>+</span></button>
+          <div class="faq-answer"><p>Absolutely. We can refresh outdated layouts and turn them into something cleaner, faster, and more modern — keeping what works and removing what doesn't.</p></div>
+        </article>
+        <article class="faq-item">
+          <button class="faq-question" type="button">Will my site work well on phones?<span>+</span></button>
+          <div class="faq-answer"><p>Every page we build is designed mobile-first — meaning it's tested on small screens first, then scaled up. Your site will look sharp on every device.</p></div>
+        </article>
+        <article class="faq-item">
+          <button class="faq-question" type="button">Do you handle hosting and domain setup?<span>+</span></button>
+          <div class="faq-answer"><p>We can guide you through hosting and domain setup, or you can handle it yourself. We make the process easy with clear step-by-step instructions.</p></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CTA BAND ─── -->
+  <section>
+    <div class="container">
+      <div class="cta-band reveal-in">
+        <h3>Ready for a Website That Actually Works?</h3>
+        <p>Let's build a clean, modern online presence that turns visitors into clients — fast.</p>
+        <div class="btn-group">
+          <a href="contact.html" class="btn btn-white">Start Your Project →</a>
+          <a href="https://wa.me/27784078575?text=Hi%20TS%20Web%20Studio%2C%20I%20would%20like%20a%20website." class="btn btn-ghost" target="_blank" rel="noopener noreferrer">💬 Chat on WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ─── FOOTER ─── -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>TS Web Studio</h3>
+        <p>Modern, conversion-focused websites for businesses, creatives, and brands that want to stand out online.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <div class="footer-links">
+          <a href="mailto:hello@tswebstudio.com">hello@tswebstudio.com</a>
+          <a href="https://wa.me/27784078575" target="_blank" rel="noopener noreferrer">0784 078 575</a>
+          <a href="contact.html">Send a Message</a>
+        </div>
+      </div>
+    </div>
+    <p class="footer-bottom">&copy; <span class="footer-year">2026</span> TS Web Studio. All rights reserved.</p>
+  </div>
+</footer>
+
+<a href="https://wa.me/27784078575?text=Hi%20TS%20Web%20Studio%2C%20I%20would%20like%20a%20website." class="floating-cta" target="_blank" rel="noopener noreferrer">
+  💬 WhatsApp Us
+</a>
+
+</body>
+</html>

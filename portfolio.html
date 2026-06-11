@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com https://images.unsplash.com; script-src 'self'; style-src 'self' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self'; frame-src 'none'; object-src 'none'; base-uri 'self'">
+  <meta name="referrer" content="no-referrer-when-downgrade">
+  <title>Portfolio | TS Web Studio</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <div class="header-inner">
+      <a href="index.html" class="brand">
+        <div class="brand-mark">
+          <img src="images/ts-logo.svg" alt="TS Web Studio" class="site-logo">
+        </div>
+        <div>
+          <div class="brand-name">TS Web Studio</div>
+          <div class="brand-sub">Modern websites for growing brands</div>
+        </div>
+      </a>
+      <button id="themeToggle" type="button" aria-label="Toggle theme">☀ Light</button>
+      <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html" class="active">Portfolio</a>
+        <a href="contact.html" class="nav-cta">Get Started →</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<div id="toast" class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+
+<main>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero-inner">
+        <div>
+          <span class="eyebrow">Selected Work</span>
+          <h2>Clean, Professional Websites That Make an Impression</h2>
+          <p class="lead">Every project is designed to feel modern, easy to navigate, and ready to convert — from the very first visit.</p>
+          <div class="hero-actions">
+            <a href="contact.html" class="btn btn-primary">Build Something Similar →</a>
+            <a href="services.html" class="btn btn-outline">View Services</a>
+          </div>
+        </div>
+        <img
+          src="https://images.unsplash.com/photo-1542744094-3a31f272c490?w=800&auto=format&fit=crop&q=80"
+          alt="Creative workspace showing portfolio design"
+          class="page-visual">
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECT GRID WITH FILTERS -->
+  <section class="showcase-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Case Studies</span>
+        <h3 class="heading-lg">Featured Project Concepts</h3>
+        <p class="body-lg" style="max-width:520px">Sample concepts showing the quality and variety of what we build for real clients.</p>
+      </div>
+
+      <div class="filter-bar">
+        <button class="filter-btn active" type="button" data-filter="all">All</button>
+        <button class="filter-btn" type="button" data-filter="brand">Brand Launch</button>
+        <button class="filter-btn" type="button" data-filter="business">Business</button>
+        <button class="filter-btn" type="button" data-filter="portfolio">Portfolio</button>
+      </div>
+
+      <div id="projectCards" class="showcase-grid" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <!-- WHAT THIS STYLE DELIVERS -->
+  <section class="testimonials-section">
+    <div class="container">
+      <div class="section-header centered">
+        <span class="eyebrow">Client Experience</span>
+        <h3 class="heading-lg">What This Style Delivers</h3>
+      </div>
+      <div class="testimonial-grid">
+        <article class="testimonial reveal-in">
+          <p class="testimonial-quote">Layouts are built to look credible, clean, and ready for real customers — every single time.</p>
+          <div class="testimonial-author">
+            <div>
+              <div class="t-name">Professional First Impression</div>
+              <div class="t-role">Instant trust, every time someone visits</div>
+            </div>
+          </div>
+        </article>
+        <article class="testimonial reveal-in">
+          <p class="testimonial-quote">Visitors can quickly understand your offer and move toward the next step — no confusion, no friction.</p>
+          <div class="testimonial-author">
+            <div>
+              <div class="t-name">Easy Navigation</div>
+              <div class="t-role">Clear paths to conversion</div>
+            </div>
+          </div>
+        </article>
+        <article class="testimonial reveal-in">
+          <p class="testimonial-quote">Your website keeps its quality and readability across every screen size — phones, tablets, desktops.</p>
+          <div class="testimonial-author">
+            <div>
+              <div class="t-name">Mobile-First Design</div>
+              <div class="t-role">Flawless on every device</div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section>
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Visual Gallery</span>
+        <h3 class="heading-lg">Studio Inspiration</h3>
+      </div>
+      <div class="photo-gallery">
+        <img
+          src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=700&auto=format&fit=crop&q=80"
+          alt="Clean developer setup with MacBook and external monitor"
+          class="gallery-thumb">
+        <img
+          src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=700&auto=format&fit=crop&q=80"
+          alt="Creative workspace with coffee and laptop"
+          class="gallery-thumb">
+        <img
+          src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=700&auto=format&fit=crop&q=80"
+          alt="Analytics and design work on screen"
+          class="gallery-thumb">
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BAND -->
+  <section>
+    <div class="container">
+      <div class="cta-band reveal-in">
+        <h3>Ready for Your Own Polished Website?</h3>
+        <p>Let's turn your idea into a clean, modern online presence that works for your business.</p>
+        <div class="btn-group">
+          <a href="contact.html" class="btn btn-white">Contact Us →</a>
+          <a href="index.html" class="btn btn-ghost">Back to Home</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>TS Web Studio</h3>
+        <p>Modern, conversion-focused websites for businesses, creatives, and brands that want to stand out online.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <div class="footer-links">
+          <a href="mailto:hello@tswebstudio.com">hello@tswebstudio.com</a>
+          <a href="https://wa.me/27784078575" target="_blank" rel="noopener noreferrer">0784 078 575</a>
+        </div>
+      </div>
+    </div>
+    <p class="footer-bottom">&copy; <span class="footer-year">2026</span> TS Web Studio. All rights reserved.</p>
+  </div>
+</footer>
+
+<a href="https://wa.me/27784078575?text=Hi%20TS%20Web%20Studio%2C%20I%20would%20like%20a%20website." class="floating-cta" target="_blank" rel="noopener noreferrer">💬 WhatsApp Us</a>
+
+<!-- Portfolio Modal -->
+<div id="portfolioModal" class="modal" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
+  <div class="modal-content">
+    <button class="modal-close" type="button" aria-label="Close modal">&times;</button>
+    <div class="modal-body">
+      <h3 id="modalTitle"></h3>
+      <p class="modal-description"></p>
+      <ul class="modal-features"></ul>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

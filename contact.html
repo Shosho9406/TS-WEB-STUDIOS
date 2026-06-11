@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com https://images.unsplash.com; script-src 'self'; style-src 'self' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self'; frame-src 'none'; object-src 'none'; base-uri 'self'">
+  <meta name="referrer" content="no-referrer-when-downgrade">
+  <title>Contact | TS Web Studio</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <div class="header-inner">
+      <a href="index.html" class="brand">
+        <div class="brand-mark">
+          <img src="images/ts-logo.svg" alt="TS Web Studio" class="site-logo">
+        </div>
+        <div>
+          <div class="brand-name">TS Web Studio</div>
+          <div class="brand-sub">Modern websites for growing brands</div>
+        </div>
+      </a>
+      <button id="themeToggle" type="button" aria-label="Toggle theme">☀ Light</button>
+      <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html" class="active nav-cta">Get Started →</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<div id="toast" class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+
+<main>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero-inner">
+        <div>
+          <span class="eyebrow">Let's Talk</span>
+          <h2>Tell Us About Your Website Project</h2>
+          <p class="lead">Whether you need a landing page, a full business website, or a portfolio — we'd love to hear what you have in mind. We usually reply within a few hours.</p>
+          <div class="hero-proof" style="margin-top:0">
+            <span class="proof-chip">⚡ Fast reply</span>
+            <span class="proof-chip">🕐 Mon–Sun, 07:00–22:00</span>
+            <span class="proof-chip">📍 JHB · Online projects welcome</span>
+          </div>
+        </div>
+        <img
+          src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&auto=format&fit=crop&q=80"
+          alt="Team collaborating on a project"
+          class="page-visual">
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT GRID -->
+  <section>
+    <div class="container">
+      <div class="contact-layout">
+
+        <!-- Info panel -->
+        <div class="contact-info reveal-in">
+          <h3>Get in Touch</h3>
+          <p>Choose the channel that suits you best — WhatsApp, email, or the form. We'll get back to you fast.</p>
+
+          <div class="contact-detail">
+            <div class="cd-icon">💬</div>
+            <div>
+              <div class="cd-label">WhatsApp</div>
+              <div class="cd-value"><a href="https://wa.me/27784078575?text=Hi%20TS%20Web%20Studio%2C%20I%20would%20like%20a%20website." target="_blank" rel="noopener noreferrer">0784 078 575</a></div>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="cd-icon">✉️</div>
+            <div>
+              <div class="cd-label">Email</div>
+              <div class="cd-value"><a href="mailto:hello@tswebstudio.com">hello@tswebstudio.com</a></div>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="cd-icon">📍</div>
+            <div>
+              <div class="cd-label">Location</div>
+              <div class="cd-value">Johannesburg · Available online</div>
+            </div>
+          </div>
+
+          <div class="contact-hours">
+            <span>📅 Mon – Sun</span>
+            <span>🕐 07:00 – 22:00</span>
+          </div>
+
+          <div class="quick-btns">
+            <a href="https://wa.me/27784078575?text=Hi%20TS%20Web%20Studio%2C%20I%20would%20like%20a%20website." class="quick-btn" target="_blank" rel="noopener noreferrer">💬 WhatsApp Us</a>
+            <a href="mailto:hello@tswebstudio.com" class="quick-btn">✉️ Send Email</a>
+          </div>
+        </div>
+
+        <!-- Contact form -->
+        <form class="contact-form reveal-in" id="contactForm" novalidate>
+          <h4>Send a Message</h4>
+
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" placeholder="Full name" autocomplete="name" required>
+
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" inputmode="email" required>
+
+          <label for="service">Service Type</label>
+          <select id="service" name="service">
+            <option value="Landing Page">Landing Page</option>
+            <option value="Business Website">Business Website</option>
+            <option value="Portfolio Website">Portfolio Website</option>
+            <option value="Online Store">Online Store</option>
+            <option value="Digital Business Card">Digital Business Card</option>
+          </select>
+
+          <label for="message">Project Details</label>
+          <textarea id="message" name="message" placeholder="Tell us what kind of website you need, your budget, and any key details…" required></textarea>
+
+          <button type="submit" class="btn btn-primary">Send Message →</button>
+          <p class="form-status" id="formStatus" aria-live="polite">Fill in the form and your message will be validated instantly.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section>
+    <div class="container">
+      <div class="section-header centered">
+        <span class="eyebrow">FAQ</span>
+        <h3 class="heading-lg">Common Questions</h3>
+      </div>
+      <div class="faq-list" style="max-width:720px;margin-inline:auto">
+        <article class="faq-item">
+          <button class="faq-question" type="button">How long does a website take to build?<span>+</span></button>
+          <div class="faq-answer"><p>Simple projects — like a landing page — can be completed in a few days. Larger sites with multiple pages take longer depending on content, pages, and revision rounds. We always share a clear timeline upfront.</p></div>
+        </article>
+        <article class="faq-item">
+          <button class="faq-question" type="button">Can you redesign my existing website?<span>+</span></button>
+          <div class="faq-answer"><p>Yes. We can refresh outdated pages and give them a cleaner, faster, and more modern presentation — keeping the content that works and improving what doesn't.</p></div>
+        </article>
+        <article class="faq-item">
+          <button class="faq-question" type="button">Do you design for mobile phones?<span>+</span></button>
+          <div class="faq-answer"><p>Absolutely. Every layout is designed mobile-first — meaning it's built and tested on small screens before being optimised for tablets and desktops. Your site will look great everywhere.</p></div>
+        </article>
+        <article class="faq-item">
+          <button class="faq-question" type="button">What do you need from me to get started?<span>+</span></button>
+          <div class="faq-answer"><p>Just a brief description of your business, what you want the website to do, and any content you already have (logo, photos, text). We'll handle the rest and ask the right questions along the way.</p></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>TS Web Studio</h3>
+        <p>Modern, conversion-focused websites for businesses, creatives, and brands that want to stand out online.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <div class="footer-links">
+          <a href="mailto:hello@tswebstudio.com">hello@tswebstudio.com</a>
+          <a href="https://wa.me/27784078575" target="_blank" rel="noopener noreferrer">0784 078 575</a>
+        </div>
+      </div>
+    </div>
+    <p class="footer-bottom">&copy; <span class="footer-year">2026</span> TS Web Studio. All rights reserved.</p>
+  </div>
+</footer>
+
+<a href="https://wa.me/27784078575?text=Hi%20TS%20Web%20Studio%2C%20I%20would%20like%20a%20website." class="floating-cta" target="_blank" rel="noopener noreferrer">💬 WhatsApp Us</a>
+
+</body>
+</html>
